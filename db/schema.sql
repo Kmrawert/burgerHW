@@ -1,0 +1,8 @@
+CREATE DATABASE burgersDB;
+USE burgersDB;
+
+CREATE TABLE burgers  (
+    id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    burgerName VARCHAR(250) NOT NULL,
+    devoured BOOLEAN NOT NULL
+    );
