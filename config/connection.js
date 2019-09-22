@@ -1,14 +1,12 @@
 var mysql = require("mysql");
+var keys = require("./keys.js");
+var password = keys.mySQL.secret;
 
 var connection = mysql.createConnection({
   host: "localhost",
   port: 3306,
   user: "root",
-  password: "",
-
-  //how can I hide my password? .env file? 
-  //do I still need a .gitignore file? 
-  
+  password: password,
   database: "burgersDB"
 });
 
