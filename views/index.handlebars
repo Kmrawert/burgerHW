@@ -8,7 +8,7 @@
   {{#each burger}}
   <!-- unless = IF NOT -->
     {{#unless devoured}}
-         {{> burgerBlock/burger-block devoured=true}}
+         {{> burgerBlock/burger-block devoured=devoured}}
     {{/unless}}
   {{/each}}
 </ul>
@@ -20,8 +20,7 @@
 <ul>
   {{#each burger}}
     {{#if devoured}}
-      {{!-- {{this.burgerName}} --}}
-      {{> burgerBlock/burger-block devoured=false}}
+      {{> burgerBlock/burger-block devoured=devoured}}
     {{/if}}
   {{/each}}
 </ul>

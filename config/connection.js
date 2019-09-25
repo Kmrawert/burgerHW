@@ -1,12 +1,12 @@
 var mysql = require("mysql");
 var keys = require("./keys.js");
-var password = keys.mySQL.secret;
+
 
 var connection = mysql.createConnection({
-  host: "localhost",
+  host: "m7wltxurw8d2n21q.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
   port: 3306,
-  user: "root",
-  password: password,
+  user: "eu5bwemfwgbybc3f",
+  password: "jro74wjtvg2wk6j5",
   database: "burgersDB"
 });
 
